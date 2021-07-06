@@ -36,18 +36,18 @@ const addInTheMiddle = (arr, val) => {
 
     // let start = Math.round(((arr.length - 1) / 2)) == 0 ? 0 : Math.round(((arr.length - 1) / 2))
 
-    let start = Math.round(((arr.length - 1) / 2));
+    let start = Math.ceil(((arr.length ) / 2));
     let newArr = [];
-    //  newArr= arr.splice(start,0,val);
-    for (let index = 0; index < arr.length; index++) {
+      arr.splice(start,0,val);
+    // for (let index = 0; index < arr.length; index++) {
 
-        if (index == start) {
-            newArr.push(val)
-        } else {
-            newArr.push(arr[index])
-        }
-    }
-    return newArr;
+    //     if (index == start) {
+    //         newArr.push(val)
+    //     } else {
+    //         newArr.push(arr[index])
+    //     }
+    // }
+    return arr;
 };
 
 
